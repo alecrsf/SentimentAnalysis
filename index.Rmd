@@ -18,48 +18,15 @@ library(tidyverse)
 
 # Basics {data-navmenu="Introduction"}
 
-## 1Pane {sidebar}
+## 1Pane
 
 ### Intro
 
-#### Vector data
+#### Sentimental Analysis 
 
 The **vector data model** represents the world using points, lines and polygons. These have discrete, well-defined borders, meaning that vector datasets usually have a high level of precision.
 
 The geographic vector data model is based on points located within a *coordinate reference system* (**CRS**)
-
-##### Simple features
-
-Simple features is an open standard developed and endorsed by the Open Geospatial Consortium (OGC)
-
-##### Geometry types
-
-Simple features in R can take on one of the 18 geometry types supported by the sf package. In this chapter we will focus on the seven most commonly used types: POINT, LINESTRING, POLYGON, MULTIPOINT, MULTILINESTRING, MULTIPOLYGON and GEOMETRYCOLLECTION. Find the whole list of possible feature types in the PostGIS manual.
-
-<br>
-
-#### Raster data
-
-The **raster data model** divides the surface up into cells of constant size. Rasters aggregate spatially specific features to a given resolution, meaning that they are consistent over space and scalable. The raster data model usually consists of a raster header and a matrix (with rows and columns) representing equally spaced cells.
-
-### Data
-
-```{r, echo=FALSE, warning=FALSE}
-tibble::tribble(
-  ~`Package`, ~Description,
-  "osmdata", "Download and import small OpenStreetMap datasets.",
-  "osmextract", "Download and import large OpenStreetMap datasets.",
-  "geodata", "Download and import imports administrative, elevation, WorldClim data.",
-  "rnaturalearth", "Access to Natural Earth vector and raster data.",
-  "rnoaa", "Imports National Oceanic and Atmospheric Administration (NOAA) climate data."
-) %>% 
-knitr::kable(caption = "Selected R packages for geographic data retrieval.", 
-             caption.short = "Selected R packages for geographic data retrieval.",
-             booktabs = TRUE) %>% 
-  kableExtra::kable_styling(latex_options="scale_down")
-```
-
-<https://code.highcharts.com/mapdata/>
 
 # Highcharter {data-navmenu="Packages"}
 

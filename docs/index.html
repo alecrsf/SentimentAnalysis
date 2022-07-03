@@ -43,8 +43,6 @@ window.FlexDashboardComponents = [];
 <script src="site_libs/stickytableheaders-0.1.19/jquery.stickytableheaders.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <style type="text/css">
 
 /*
@@ -2604,98 +2602,24 @@ window.FlexDashboardComponents.push({
 <div id="dashboard-container">
 
 <div id="basics" class="section level1" data-navmenu="Introduction">
-<h1 data-navmenu="Introduction">Basics</h1>
-<div id="pane-sidebar" class="section level2">
-<h2>1Pane {sidebar}</h2>
+<h1>Basics</h1>
+<div id="pane" class="section level2">
+<h2>1Pane</h2>
 <div id="intro" class="section level3">
 <h3>Intro</h3>
-<div id="vector-data" class="section level4">
-<h4>Vector data</h4>
-<p>The <strong>vector data model</strong> represents the world using points, lines and polygons. These have discrete, well-defined borders, meaning that vector datasets usually have a high level of precision.</p>
-<p>The geographic vector data model is based on points located within a <em>coordinate reference system</em> (<strong>CRS</strong>)</p>
-<div id="simple-features" class="section level5">
-<h5>Simple features</h5>
-<p>Simple features is an open standard developed and endorsed by the Open Geospatial Consortium (OGC)</p>
+<div id="sentimental-analysis" class="section level4">
+<h4>Sentimental Analysis</h4>
+<p>The <strong>vector data model</strong> represents the world using
+points, lines and polygons. These have discrete, well-defined borders,
+meaning that vector datasets usually have a high level of precision.</p>
+<p>The geographic vector data model is based on points located within a
+<em>coordinate reference system</em> (<strong>CRS</strong>)</p>
 </div>
-<div id="geometry-types" class="section level5">
-<h5>Geometry types</h5>
-<p>Simple features in R can take on one of the 18 geometry types supported by the sf package. In this chapter we will focus on the seven most commonly used types: POINT, LINESTRING, POLYGON, MULTIPOINT, MULTILINESTRING, MULTIPOLYGON and GEOMETRYCOLLECTION. Find the whole list of possible feature types in the PostGIS manual.</p>
-<p><br></p>
-</div>
-</div>
-<div id="raster-data" class="section level4">
-<h4>Raster data</h4>
-<p>The <strong>raster data model</strong> divides the surface up into cells of constant size. Rasters aggregate spatially specific features to a given resolution, meaning that they are consistent over space and scalable. The raster data model usually consists of a raster header and a matrix (with rows and columns) representing equally spaced cells.</p>
-</div>
-</div>
-<div id="data" class="section level3">
-<h3>Data</h3>
-<div class="knitr-options" data-fig-width="576" data-fig-height="460">
-
-</div>
-<table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>
-Selected R packages for geographic data retrieval.
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Package
-</th>
-<th style="text-align:left;">
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-osmdata
-</td>
-<td style="text-align:left;">
-Download and import small OpenStreetMap datasets.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-osmextract
-</td>
-<td style="text-align:left;">
-Download and import large OpenStreetMap datasets.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-geodata
-</td>
-<td style="text-align:left;">
-Download and import imports administrative, elevation, WorldClim data.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-rnaturalearth
-</td>
-<td style="text-align:left;">
-Access to Natural Earth vector and raster data.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-rnoaa
-</td>
-<td style="text-align:left;">
-Imports National Oceanic and Atmospheric Administration (NOAA) climate data.
-</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://code.highcharts.com/mapdata/" class="uri">https://code.highcharts.com/mapdata/</a></p>
 </div>
 </div>
 </div>
 <div id="highcharter" class="section level1" data-navmenu="Packages">
-<h1 data-navmenu="Packages">Highcharter</h1>
+<h1>Highcharter</h1>
 <div id="column" class="section level2">
 <h2>Column</h2>
 <div id="highcharter-1" class="section level3">
@@ -2705,17 +2629,20 @@ Imports National Oceanic and Atmospheric Administration (NOAA) climate data.
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<p><a href="https://code.highcharts.com/mapdata/" class="uri">https://code.highcharts.com/mapdata/</a></p>
+<p><a href="https://code.highcharts.com/mapdata/"
+class="uri">https://code.highcharts.com/mapdata/</a></p>
 <ul>
-<li><code>download_map_data()</code>: Download the geojson data from the highchartsJS collection.</li>
-<li><code>get_data_from_map()</code>: Get the properties for each region in the map, as the keys from the map data.</li>
+<li><code>download_map_data()</code>: Download the geojson data from the
+highchartsJS collection.</li>
+<li><code>get_data_from_map()</code>: Get the properties for each region
+in the map, as the keys from the map data.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="leaflet" class="section level1" data-navmenu="Packages">
-<h1 data-navmenu="Packages">Leaflet</h1>
+<h1>Leaflet</h1>
 <div id="column-1" class="section level2">
 <h2>Column</h2>
 <div id="leaflet-1" class="section level3">
@@ -2725,7 +2652,9 @@ Imports National Oceanic and Atmospheric Administration (NOAA) climate data.
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<p>For working with <em>GeoJSON/TopoJSON</em> data you have two options: either read it into <em>sp</em> objects; or use the <code>addGeoJSON()</code> and <code>addTopoJSON()</code> functions</p>
+<p>For working with <em>GeoJSON/TopoJSON</em> data you have two options:
+either read it into <em>sp</em> objects; or use the
+<code>addGeoJSON()</code> and <code>addTopoJSON()</code> functions</p>
 </div>
 </div>
 </div>
